@@ -1,0 +1,5 @@
+A simple accumulator object.
+If several things need to be completed before something else happens, this will prevent "Christmas-tree" code.
+Simply create an accumulator with two arguments: an array of object property names that will be used to store your data while it accumulates and a callback to be executed upon completion.
+In the callback of each of the tasks that need to be completed, after you assign the result to the appropriate property, simply call "finalize".
+This will check the properties to see if they are defined. If all properties are defined at the time this method is called, the accumulator's callback is initiated.
