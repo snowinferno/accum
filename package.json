@@ -1,0 +1,17 @@
+{
+  "author": "Greg Wilburn",
+  "name": "accum",
+  "description": "An object to aid in multiple asynch operations which need to be complete before a callback is completed",
+  "version": "0.0.1beta",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snowinferno/accum.git"
+  },
+  "main": "accum",
+  "engines": {
+    "node": "~0.6.9"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
