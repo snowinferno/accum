@@ -18,8 +18,9 @@ exports.createAccum = function( props, cb ){
 			}
 		}
 
+		this.isFinished = isFinished;
+
 		if( this.cb && isFinished ){ this.cb( this ); } // if we're finished and a callback was specified, send the object on to the callback
-		else { this.isFinished = isFinished; } // if no callback is defined, update the object's finished property to let the programmer test on their own.
 	}
 	return obj; // return the new accumulator object.
 }
