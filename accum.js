@@ -16,7 +16,6 @@ function Accum( props, cb ){
 util.inherits( Accum, events.EventEmitter ); // inherit the methods from EventEmitter
 
 Accum.prototype.add = function( key, data ){
-	console.log( key in this.__propList );
 	if( ! (key in this.__propList) ){
 		throw new ReferenceError( "Attempt to add value to unexpected property." );
 	}
