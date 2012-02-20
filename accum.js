@@ -43,10 +43,14 @@ Accum.prototype.initialize = function( properties ){
 	this.__propList = properties; // store a list of properties that were set to check with the finalize method
 	this.isFinished = false;
 
+	var propObj = {};
+
 	// add a property to a new object for each property passed in the array props
 	for( var i = 0; i < properties.length; i++ ){
 		this[properties[i]] = undefined; // define each property to be undefined explicitly
+		propObj[properties[i]] = true;
 	}
+	this.__propList = propObj;
 }
 
 Accum.prototype.reset = function(){
